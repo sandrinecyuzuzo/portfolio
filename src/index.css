@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+ 
+}
+
+.inria {
+  font-family: 'Inria Serif', sans-serif;
+}
+
+.grad-back {
+  background: -webkit-linear-gradient(180deg, #C40D60, #C40D60);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
