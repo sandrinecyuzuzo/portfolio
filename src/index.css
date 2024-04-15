@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 
-body {
- 
-}
+/* * {
+  border: 1px solid black;
+} */
 
 .inria {
   font-family: 'Inria Serif', sans-serif;
@@ -17,4 +17,3 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-

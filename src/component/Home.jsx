@@ -17,24 +17,21 @@ import sau from "../assets/images/sau.png";
 
 const Home = () => {
     return (
-        <>
-            <div className=' flex px-12 items-center bg-[#F5F7F8] '>
-                <div className='w-1/2 inria '>
-                    <p className='text-[#CE5B5B]'>full stack Developer</p>
-                    <h1 className='text-4xl text-black font-black animate-bounce'>hello, i'm <span className='text-[#CE5B5B]'>cyuzuzo sandrine</span> </h1>
-                    <h1 className='text-4xl text-black font-black animate-slideIn -Right'>welcome to my world.</h1>
+        <div className='inria'>
+            <div className='flex flex-col-reverse md:flex-row px-6 sm:px-12 items-center bg-[#F5F7F8] '>
+                <div className='w-full lg:w-1/2 inria '>
+                    <p className='text-[#CE5B5B] text-2xl'>full stack Developer</p>
+                    <h1 className='text-6xl text-black font-black '>hello, i'm <span className='text-[#CE5B5B]'>cyuzuzo sandrine</span> </h1>
+                    <h1 className='text-6xl text-black font-black '>welcome to my world.</h1>
                 </div>
                 <div className=' '>
-                    <img className='w-90 h-[80vh] rounded-full' src={rr} alt="" />
+                    <img className='w-90 md:h-[80vh] ' src={rr} alt="" />
                 </div>
             </div>
-            <div className='w-full items-center bg-[#FFFFFF] p-24 flex'>
-                <div>
+            <div className='w-full px-6 sm:px-10 items-center bg-[#FFFFFF] lg:px-24 flex flex-col lg:flex-row'>
+                <img className='min-w-80 lg:h-[80vh] object-cover object-top' src={pp} alt="" />
 
-                    <img className='min-w-80 h-[80vh] rounded-full' src={pp} alt="" />
-                </div>
-
-                <div className='  text-black inria  ml-20'>
+                <div className='text-black lg:ml-20'>
                     <h1 id='about' className='text-6xl text-black  font-semibold underline underline-offset-8'>About Me </h1>
                     <p className='pt-10 text-gray-500'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going.</p>
                     <nav class=" py-4 ">
@@ -55,14 +52,13 @@ const Home = () => {
 
             </div>
 
-            <div className='w-full bg-[#F8F9FC]'>
-                <div className='col-span-2 mx-96'>
+            <div className='w-full px-4 sm:px-12 bg-[#F8F9FC]'>
+                <div className='col-span-2 flex flex-col items-center  mx-20'>
                     <h1 id='services' className='text-4xl  pt-8 font-semibold underline underline-offset-8'>My Awesome Service</h1>
                     <p className='text-xl mt-5 text-gray-500'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                 </div>
-                <div className='grid grid-cols-3 gap-3  justify-normal mt-24 min-w-2 h-72 mx-20 '>
 
-
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-3 md:grid-cols-3 lg:mt-24 min-w-2 mx-20 '>
                     <div className='col-span-1 bg-gray-100 mr-5 h-60 text-gray-500'>
                         <img className=' h-44  w-96' src={figm} alt="" />
                         <h1>Find design templates for all of your graphic design, web design, and mobile interface design needs.</h1>
@@ -83,8 +79,7 @@ const Home = () => {
 
                 </div>
 
-
-                <div className='grid grid-cols-3 gap-3  justify-normal min-w-2 h-72 mx-20 '>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3  min-w-2 lg:mx-20 '>
 
 
                     <div className='col-span-1 bg-gray-100 mr-5 h-60 text-gray-500'>
@@ -105,19 +100,18 @@ const Home = () => {
                     </div>
 
                 </div>
-
             </div>
 
 
-            <div className='w-full bg-[#FFFFFF] '>
-                <div className='col-span-2 mx-96'>
+            <div className='w-full flex flex-col items-center bg-[#FFFFFF] '>
+                <div className='col-span-2 flex flex-col items-center'>
                     <h1 id='blog' className='text-4xl  pt-8 font-semibold underline underline-offset-8'>My Latest Project</h1>
                     <p className='text-gray-500 pt-8'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                 </div>
-                <div className='grid grid-cols-3 gap-3  justify-normal  min-w-1 h-96 mx-20 pt-8 '>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-3  justify-items-center ite  min-w-1 md:mx-20 pt-8 '>
 
 
-                    <div className='col-span-1 bg-white  hover:border-red-500 '>
+                    <div className='md:col-span-1 bg-white  hover:border-red-500 '>
 
 
                         <a href="https://www.figma.com/proto/4kE6iK7sNLqJLBeafUUNxi/Untitled?type=design&node-id=19-47&t=uPlPJ9zzB1HRD40I-1&scaling=scale-down&page-id=0%3A1&mode=design" target="_blank" rel="noopener noreferrer">
@@ -126,7 +120,7 @@ const Home = () => {
                     </div>
 
 
-                    <div className='col-span-1 bg-white'>
+                    <div className='md:col-span-1 bg-white'>
 
 
                         <a href="https://movie-two-peach.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -135,16 +129,16 @@ const Home = () => {
                     </div>
 
 
-                    <div className='col-span-1 bg-white'>
+                    <div className='md:col-span-1 bg-white'>
 
                         <a href="https://www.figma.com/proto/GtkhgcUmVcMprowlhNYaFB/Untitled?node-id=1-2&mode=design&t=2WtIAsNMhHequvfK-1" target="_blank" rel="noopener noreferrer">
                             <img className='w-96 h-96 ' src={pup} alt="" />
 
                         </a>
                     </div>
-                    <button type='view more' className='bg-[#CE5B5B] hover:bg-[#d65454] text-white font-bold py-2 px-2 w-32  flex-none mx-96 rounded focus:outline-none focus:shadow-outline justify-items-center'>view more</button>
 
                 </div>
+                <button type='view more' className='bg-[#CE5B5B] hover:bg-[#d65454] text-white font-bold py-2 px-2 w-32  my-4  rounded focus:outline-none focus:shadow-outline'>view more</button>
 
 
 
@@ -157,34 +151,34 @@ const Home = () => {
                     <form className='mt-8'>
                         <div className='mb-4'>
                             <label htmlFor='name' className='block text-gray-700 text-sm font-bold mb-2'></label>
-                            <input type='text' id='name' name='name' className='w-full shadow appearance-none border rounded py-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ' placeholder=' your name*' />
+                            <input type='text' id='name' name='name' className='w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ' placeholder=' your name*' />
                         </div>
                         <div className='mb-4'>
                             <label htmlFor='email' className='block text-gray-700 text-sm font-bold mb-2'></label>
-                            <input type='email' id='email' name='email' className='w-full shadow appearance-none border rounded  py-2  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder=' your email*' />
+                            <input type='email' id='email' name='email' className='w-full shadow appearance-none border rounded  py-2 px-3  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder=' your email*' />
                         </div>
 
                         <div className='mb-4'>
                             <label htmlFor='' className='block text-gray-700 text-sm font-bold mb-2'></label>
-                            <input type='text' id='object' name='object' className='w-full shadow appearance-none border rounded  py-2  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='writter a subject' />
+                            <input type='text' id='object' name='object' className='w-full shadow appearance-none border rounded  py-2 px-3  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='writter a subject' />
                         </div>
 
                         <div className='mb-4'>
                             <label htmlFor='message' className='block text-gray-700 text-sm font-bold mb-2 h'></label>
-                            <textarea id='message' name='message' rows='3' className='w-full shadow appearance-none border rounded  py-2  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='your message'></textarea>
+                            <textarea id='message' name='message' rows='3' className='w-full shadow appearance-none border rounded px-3 py-2  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='your message'></textarea>
                         </div>
                         <button type='submit' className='bg-[#CE5B5B] hover:bg-[#d65454] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Submit</button>
                     </form>
                 </div>
                 <div>
-                    <img className='main-w-64 h-[72vh]  ml-12 mt-28 rounded-full' src={zuu} alt="" />
+                    <img className='main-w-64 h-[72vh]  ml-12 mt-28 ' src={zuu} alt="" />
                 </div>
 
 
             </div>
 
 
-            <footer className="bg-[#000000] py-10">
+            <footer className="bg-gray-900 py">
                 <div className="container mx-auto flex justify-between items-center text-white">
                     <div className="footer-left flex items-center">
                         <img className='w-16 h-16 rounded-full' src={sau} alt="" />
@@ -211,7 +205,7 @@ const Home = () => {
 
 
 
-        </>
+        </div>
 
     )
 }
